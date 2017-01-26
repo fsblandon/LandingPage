@@ -299,13 +299,13 @@ monospace;
 @navbar-padding-horizontal : floor((@grid-gutter-width / 2));
 @navbar-padding-vertical : ((@navbar-height - @line-height-computed) / 2);
 @navbar-collapse-max-height : 340px;
-@navbar-default-color : white;
-@navbar-default-bg : #272B30;
+@navbar-default-color : #00FF49;
+@navbar-default-bg : transparent;
 @navbar-default-border : darken(@navbar-default-bg, 6.5%);
 // Navbar links
 @navbar-default-link-color : @navbar-default-color;
 @navbar-default-link-hover-color : @navbar-default-color;
-@navbar-default-link-hover-bg : transparent;
+@navbar-default-link-hover-bg : #BDD6C4;
 @navbar-default-link-active-color : @navbar-default-color;
 @navbar-default-link-active-bg : darken(@navbar-default-bg, 6.5%);
 @navbar-default-link-disabled-color : #ccc;
@@ -315,30 +315,32 @@ monospace;
 @navbar-default-brand-hover-color : darken(@navbar-default-brand-color, 10%);
 @navbar-default-brand-hover-bg : transparent;
 // Navbar toggle
-@navbar-default-toggle-hover-bg : #ddd;
-@navbar-default-toggle-icon-bar-bg : #888;
-@navbar-default-toggle-border-color : #ddd;
+@navbar-default-toggle-hover-bg : #BDD6C4;
+@navbar-default-toggle-icon-bar-bg : #ddd;
+@navbar-default-toggle-border-color : #BDD6C4;
+@navbar-inverse-toogle-hover-disabled-bg: transparent;
 // Inverted navbar
 // Reset inverted navbar basics
 @navbar-inverse-color : lighten(@gray-light, 15%);
-@navbar-inverse-bg : #222;
+@navbar-inverse-bg : transparent;
 @navbar-inverse-border : darken(@navbar-inverse-bg, 10%);
 // Inverted navbar links
 @navbar-inverse-link-color : lighten(@gray-light, 15%);
 @navbar-inverse-link-hover-color : #fff;
-@navbar-inverse-link-hover-bg : transparent;
+@navbar-inverse-link-hover-bg : #BDD6C4;
 @navbar-inverse-link-active-color : @navbar-inverse-link-hover-color;
 @navbar-inverse-link-active-bg : darken(@navbar-inverse-bg, 10%);
 @navbar-inverse-link-disabled-color : #444;
 @navbar-inverse-link-disabled-bg : transparent;
 // Inverted navbar brand label
 @navbar-inverse-brand-color : @navbar-inverse-link-color;
-@navbar-inverse-brand-hover-color : #fff;
-@navbar-inverse-brand-hover-bg : transparent;
+@navbar-inverse-brand-hover-color : #BDD6C4;
+@navbar-inverse-brand-hover-bg : #BDD6C4;
 // Inverted navbar toggle
-@navbar-inverse-toggle-hover-bg : #333;
-@navbar-inverse-toggle-icon-bar-bg : #fff;
-@navbar-inverse-toggle-border-color : #333;
+@navbar-inverse-toggle-hover-bg : #BDD6C4;
+@navbar-inverse-toggle-icon-bar-bg : #ddd;
+@navbar-inverse-toggle-border-color : #BDD6C4;
+@navbar-inverse-toogle-hover-disabled-bg: transparent;
 //== Navs
 //
 //##
@@ -349,10 +351,10 @@ monospace;
 @nav-disabled-link-hover-color : @gray-light;
 //== Tabs
 @nav-tabs-border-color : #ddd;
-@nav-tabs-link-hover-border-color : @gray-lighter;
+@nav-tabs-link-hover-border-color : green;
 @nav-tabs-active-link-hover-bg : @body-bg;
-@nav-tabs-active-link-hover-color : @gray;
-@nav-tabs-active-link-hover-border-color : #ddd;
+@nav-tabs-active-link-hover-color : green;
+@nav-tabs-active-link-hover-border-color : green;
 @nav-tabs-justified-link-border-color : #ddd;
 @nav-tabs-justified-active-link-border-color : @body-bg;
 //== Pills

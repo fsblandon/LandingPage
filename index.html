@@ -1,41 +1,45 @@
-<html><head>
+<!DOCTYPE html>
+
+<html>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="index.css" rel="stylesheet" type="text/css">
-  </head><body>
-    <div class="cover">
-      <div class="navbar navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#" style="position:relative;margin: 0 auto;"><span>Santiago Blandon</span></a>
-          </div>
-          <div class="collapse navbar-collapse" id="navbar-ex-collapse" style="background-color:#f2f9f2;text-align:center;">
-            <ul class="nav navbar-nav navbar-right" id="opciones" style="position:relative;margin:0 auto;">
-              <li class="active">
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#about">Acerca de mi</a>
-              </li>
-              <li>
-                <a href="#servicios">Servicios</a>
-              </li>
-              <li>
-                <a href="#contacto">Contactarme</a>
-              </li>
-            </ul>
-          </div>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="text-align:center;">
+      <div class="container-fluid" style="background-color:#f2f9f2;">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#" style="position:relative;margin: 0 auto;color:green"><span>Santiago Blandon</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <ul class="nav navbar-nav navbar-right" id="opciones" style="position:relative;margin:0 auto;">
+            <li class="active">
+              <a href="#" style="color:green;">Home</a>
+            </li>
+            <li>
+              <a href="#about" style="color:green;">Acerca de mi</a>
+            </li>
+            <li>
+              <a href="#servicios" style="color:green;">Servicios</a>
+            </li>
+            <li>
+              <a href="#contacto" style="color:green;">Contactarme</a>
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
+    <div class="cover">
       <div class="cover-image" style="background-image: url(cover.jpeg);"></div>
       <div class="container">
         <div class="row">
@@ -49,11 +53,43 @@
         </div>
       </div>
     </div>
+    <div class="section" id="about">
+      <div class="container" style="margin-top:2%">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center text-primary">Acerca de mi</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="text-center">
+              <p>Hola, mi nombre es Santiago Blandon,</p>
+              <p>un apasionado a las nuevas tecnologías, las herramientas innovadoras y
+                el mundo</p>
+              <p>de los dispositivos móviles.</p>
+              <br>
+              <p>Siempre aprendiendo en el día a día,</p>
+              <p>para lograr aplicarlo a la vida profesional</p>
+              <p>o poder transmitirlo a los démas.</p>
+              <br>
+              <p>Me gusta creer en las ideas innovadoras,</p>
+              <p>ya que de una sola idea provienen otras,</p>
+              <p>y esto permite la innovación en los negocios y el talento.</p>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="section" id="servicios">
-      <div class="container">
+      <div class="container" style="margin-top:2%">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center text-primary">Servicios</h1>
+          </div>
+        </div>
         <div class="row" id="webpages">
           <div class="col-md-6">
-            <img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive">
+            <img src="webpages_cover.png" class="img-responsive">
           </div>
           <div class="col-md-6">
             <h1 class="text-primary">Páginas Web</h1>
@@ -89,38 +125,43 @@
             </div>
           </div>
           <div class="col-md-6">
-            <img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive">
+            <img src="mobile_cover.png" class="img-responsive">
           </div>
         </div>
       </div>
     </div>
     <div class="section" id="contacto">
-      <div class="container">
+      <div class="container" style="margin-top:2%">
         <div class="row">
           <div class="col-md-12">
             <h1 class="text-center text-primary">Contactarme</h1>
-            <p class="text-center">We are a group of skilled individuals.</p>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4">
-            <img src="http://pingendo.github.io/pingendo-bootstrap/assets/user_placeholder.png" class="center-block img-circle img-responsive">
-            <h3 class="text-center">John Doe</h3>
-            <p class="text-center">Developer</p>
-          </div>
-          <div class="col-md-4">
-            <img src="http://pingendo.github.io/pingendo-bootstrap/assets/user_placeholder.png" class="center-block img-circle img-responsive">
-            <h3 class="text-center">John Doe</h3>
-            <p class="text-center">Developer</p>
-          </div>
-          <div class="col-md-4">
-            <img src="http://pingendo.github.io/pingendo-bootstrap/assets/user_placeholder.png" class="center-block img-circle img-responsive">
-            <h3 class="text-center">John Doe</h3>
-            <p class="text-center">Developer</p>
-          </div>
+          <form role="form" id="contact_form" method="post" action="process.php">
+            <div class="form-group">
+              <label for="name">
+                <h4>Nombre:</h4>
+              </label>
+              <input type="text" class="form-control" placeholder="Nombre" id="nombre" name="nombre">
+            </div>
+            <div class="form-group">
+              <label for="email">
+                <h4>Correo:</h4>
+              </label>
+              <input type="email" class="form-control" placeholder="Correo electrónico" id="correo" name="correo">
+            </div>
+            <div class="form-group">
+              <label for="message">
+                <h4>Mensaje:</h4>
+              </label>
+              <textarea class="form-control" rows="8" placeholder="Mensaje" id="mensaje" name="mensaje"></textarea>
+            </div>
+            <input id="submit" name="submit" type="submit" value="Enviar" class="btn btn-default">
+          </form>
         </div>
       </div>
     </div>
-  
-
-</body></html>
+    <footer></footer>
+  </body>
+</html>
