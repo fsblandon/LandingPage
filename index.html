@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<!-- Live refresh CSS, HTML and JS in browser. -->
+    <script type="text/javascript" src="js/live.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="index.css" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="text-align:center;">
@@ -19,28 +23,34 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#" style="position:relative;margin: 0 auto;color:green"><span>Santiago Blandon</span></a>
+          <a class="navbar-brand" href="#" style="position:relative;margin: 0 auto;color:green;">
+            <!--<div class="logo"><img src="icono.png"></div>-->
+            <div class="brand"><span>Santiago Blandon</span></div>
+          </a>
         </div>
         <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+        <div class="container-fluid">
           <ul class="nav navbar-nav navbar-right" id="opciones" style="position:relative;margin:0 auto;">
             <li class="active">
               <a href="#" style="color:green;">Home</a>
             </li>
-            <li>
+            <li  >
               <a href="#about" style="color:green;">Acerca de mi</a>
             </li>
-            <li>
+            <li >
               <a href="#servicios" style="color:green;">Servicios</a>
             </li>
-            <li>
+            <li >
               <a href="#contacto" style="color:green;">Contactarme</a>
             </li>
           </ul>
         </div>
+          
+        </div>
       </div>
     </nav>
     <div class="cover">
-      <div class="cover-image" style="background-image: url(cover.jpeg);"></div>
+      <div class="cover-image" style="background-image: url(images/cover.jpeg);"></div>
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
@@ -73,8 +83,8 @@
               <p>o poder transmitirlo a los démas.</p>
               <br>
               <p>Me gusta creer en las ideas innovadoras,</p>
-              <p>ya que de una sola idea provienen otras,</p>
-              <p>y esto permite la innovación en los negocios y el talento.</p>
+              <p>ya que de una sola idea se generan otras,</p>
+              <p>y esto permite la innovación en los negocios y generación de talento.</p>
             </h3>
           </div>
         </div>
@@ -89,7 +99,7 @@
         </div>
         <div class="row" id="webpages">
           <div class="col-md-6">
-            <img src="webpages_cover.png" class="img-responsive">
+            <img src="images/webpages_cover.png" class="img-responsive">
           </div>
           <div class="col-md-6">
             <h1 class="text-primary">Páginas Web</h1>
@@ -121,11 +131,14 @@
                 <li>
                   <h3>Personales</h3>
                 </li>
+                <li>
+                	<h3>Innovadoras</h3>
+                </li>
               </ul>
             </div>
           </div>
           <div class="col-md-6">
-            <img src="mobile_cover.png" class="img-responsive">
+            <img src="images/mobile_cover.png" class="img-responsive">
           </div>
         </div>
       </div>
@@ -138,7 +151,7 @@
           </div>
         </div>
         <div class="row">
-          <form role="form" id="contact_form" method="post" action="process.php">
+          <form role="form" id="contact_form" method="post">
             <div class="form-group">
               <label for="name">
                 <h4>Nombre:</h4>
